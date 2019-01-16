@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="接口自动化测试">
+    <test name="接口自动化测试">
+        <classes>
+            <!--//登陆-->
+            <class name="com.qishon.test.LoginTest">
+                <methods>
+                    <include name="beforeTest_url"/>
+                    <include name="getToken"/>
+                    <include name="getTokenTest"/>
+                    <include name="gs_sys_shopLogin"/>
+                    <include name="alter_PWD"/>
+                </methods>
+            </class>
+            <!--//获取运营分类-->
+            <class name="com.qishon.test.Mat_mdl_getNavClassListTestCase">
+                <methods>
+                    <include name="Mat_mdl_getNavClassListTest"/>
+                </methods>
+            </class>
+            <!--//获取门店的导购员信息-->
+            <class name="com.qishon.test.Gs_sys_getPersonInfoByJobTestCase">
+                <methods>
+                    <include name="Gs_sys_getPersonInfoByJobTest"/>
+                </methods>
+            </class>
+            <!--//设备注册-->
+            <class name="com.qishon.test.Gs_sys_regDeviceInfTestCase">
+                <methods>
+                    <include name="Gs_sys_regDeviceInfTest"/>
+                </methods>
+            </class>
+            <!--//获取商品墙商品列表-->
+            <class name="com.qishon.test.Gs_prod_ListTestCase">
+                <methods>
+                    <include name="Gs_prod_List"/>
+                </methods>
+            </class>
+            <!--//获取商品基本信息-->
+            <class name="com.qishon.test.Gs_prod_getProdInfoTestCase">
+                <methods>
+                    <include name="Gs_prod_getProdInfoTest"/>
+                </methods>
+            </class>
+            <!--//根据款式版型获取默认定制详情-->
+            <class name="com.qishon.test.Gs_prod_getProdOrdDetailTestCase">
+                <methods>
+                    <include name="Gs_prod_getProdOrdDetailTest"/>
+                </methods>
+            </class>
+            <!--//获取商品配件信息-->
+            <class name="com.qishon.test.Gs_match_getFitProdInfoNewTestCase">
+                <methods>
+                    <include name="Gs_match_getFitProdInfoNewTest"/>
+                </methods>
+            </class>
+            <!--//定制渲染接口-->
+            <class name="com.qishon.test.Gs_match_get3DModelInfoNewTestCase">
+                <methods>
+                    <include name="Gs_match_get3DModelInfoNewTest"/>
+                </methods>
+            </class>
+            <!--//获取商品配件渲染信息-->
+            <class name="com.qishon.test.Gs_match_getFitProdRenderNewTestCase">
+                <methods>
+                    <include name="gs_match_getFitProdRenderNewTest"/>
+                </methods>
+            </class>
+            <!--//获取定制商品可替换部位-->
+            <class name="com.qishon.test.Gs_prod_getRegionByTypeTestCase">
+                <methods>
+                    <include name="gs_prod_getRegionByTypeTest"/>
+                </methods>
+            </class>
+            <!--//获取可替换部件和面料-->
+            <class name="com.qishon.test.Gs_prod_getReplacePartTestCase">
+                <methods>
+                    <include name="gs_prod_getReplacePartTest"/>
+                </methods>
+            </class>
+            <!--//搜索可替换面料-->
+            <class name="com.qishon.test.Gs_mas_filterProdFabRicattrTestCase">
+                <methods>
+                    <include name="gs_mas_filterProdFabRicattrTest"/>
+                </methods>
+            </class>
+            <!--//获取商品销量，评价，标签-->
+            <class name="com.qishon.test.Gs_prod_detailTestCase">
+                <methods>
+                    <include name="gs_prod_detailTest"/>
+                </methods>
+            </class>
+            <!--//获取印花可定制部位-->
+            <class name="com.qishon.test.Gs_prod_getProdRegionByPrintTestCase">
+                <methods>
+                    <include name="gs_prod_getProdRegionByPrintTest"/>
+                </methods>
+            </class>
+            <!--//获取印花列表-->
+            <class name="com.qishon.test.Gs_prod_getPrintByRegionTestCase">
+                <methods>
+                    <include name="gs_prod_getPrintByRegionTest"/>
+                </methods>
+            </class>
+            <!--//获取绣字可定制部位列表-->
+            <class name="com.qishon.test.Gs_mas_getEMBCustomListTestCase">
+                <methods>
+                    <include name="gs_mas_getEMBCustomListTest"/>
+                </methods>
+            </class>
+            <!--//保存定制方案-->
+            <class name="com.qishon.test.Gs_cus_saveCustomTestCase">
+                <methods>
+                    <include name="gs_cus_saveCustomTest"/>
+                </methods>
+            </class>
+            <!--//获取定制方案列表接口-->
+            <class name="com.qishon.test.Gs_cus_getCustomListTestCase">
+                <methods>
+                    <include name="gs_cus_getCustomListTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--<listeners>-->
+        <!--<listener class-name="com.qishon.utils.ExtentTestNGIReporterListener"></listener>-->
+    <!--</listeners>-->
+</suite>
